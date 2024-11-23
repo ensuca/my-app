@@ -3,28 +3,32 @@ import logo from './logo.svg';
 import './App.css';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import LoginForm from './components/Auth/LoginForm';
+import ProtectedRoute from './components/Auth/ProtectedRoute';
+import UserList from './components/Users/UserList';
+import Layout from './components/Layout/Layout';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
+
+const App = () => {
   return (
     <Provider store={store}>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          {/* Public routes */}
+          <Route path="/login" element={<LoginForm />} />
+
+          {/* Protected routes */}
+          <Route element={<ProtectedRoute />}>
+            <Route element={<Layout />}>
+              <Route path="/" element={<UserList />} />
+              {/* Diğer protected route'lar buraya eklenebilir */}
+            </Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </Provider>
   );
-}
+};
 
 export default App;
