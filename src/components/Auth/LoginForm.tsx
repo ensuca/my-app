@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from '../../hooks/useTypedSelector';
 import { loginUser } from '../../store/authSlice';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const dispatch = useDispatch();
-  const { loading, error } = useSelector((state: RootState) => state.auth);
+  const dispatch = useAppDispatch();
+  const { loading, error } = useAppSelector((state) => state.auth);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    dispatch(loginUser({ username, password }));
+    await dispatch(loginUser({ username, password }));
   };
 
   return (
@@ -49,3 +49,5 @@ const LoginForm = () => {
     </div>
   );
 };
+
+export default LoginForm;
