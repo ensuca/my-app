@@ -6,7 +6,7 @@ export interface User {
     createdAt: string;
   }
   
-  interface AuthResponse {
+  export interface AuthResponse {
     user: User;
     token: string;
   }
