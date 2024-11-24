@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/useTypedSelector';
 import { fetchUsers } from '../../store/userSlice';
-import AddUserModal from '../Users/AddUserModal';
+import AddUserModal from './AddUserModal';
+import { User } from '../../types';  // User tipini import ediyoruz
 
 export const UserList: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -41,7 +42,7 @@ export const UserList: React.FC = () => {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {users.map((user) => (
+        {users.map((user: User) => (  // User tipini açıkça belirtiyoruz
           <div
             key={user.id}
             className="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow"
