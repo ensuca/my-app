@@ -20,6 +20,7 @@ const mockUsers: User[] = [
   export const userService = {
     getUsers: async (): Promise<User[]> => {
       // Mock API çağrısı
+      // Mock API call
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve([...mockUsers]);
@@ -29,6 +30,7 @@ const mockUsers: User[] = [
   
     addUser: async (userData: Omit<User, 'id' | 'createdAt'>): Promise<User> => {
       // Mock API çağrısı
+      // Mock API call
       return new Promise((resolve) => {
         setTimeout(() => {
           const newUser: User = {

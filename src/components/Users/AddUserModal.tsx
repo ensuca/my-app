@@ -12,6 +12,8 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ onClose, onAdd }) => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
+    password: '', 
+    confirmPassword: '',
     role: 'User'
   });
   const [loading, setLoading] = useState(false);
@@ -22,6 +24,11 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ onClose, onAdd }) => {
 
     if (!formData.email.includes('@')) {
       setError('Please enter a valid email address.');
+      return;
+    }
+
+    if (formData.password !== formData.confirmPassword) {
+      setError('Passwords do not match');
       return;
     }
   
@@ -91,6 +98,29 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ onClose, onAdd }) => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
+                  className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-black"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  placeholder="Password"
+                  className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-black"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  value={formData.confirmPassword}
+                  onChange={handleChange}
+                  placeholder="Confirm Password"
                   className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-black"
                   required
                 />
