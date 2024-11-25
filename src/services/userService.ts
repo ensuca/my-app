@@ -22,7 +22,7 @@ const mockUsers: User[] = [
       // Mock API çağrısı
       return new Promise((resolve) => {
         setTimeout(() => {
-          resolve(mockUsers);
+          resolve([...mockUsers]);
         }, 1000);
       });
     },
@@ -36,7 +36,7 @@ const mockUsers: User[] = [
             id: mockUsers.length + 1,
             createdAt: new Date().toISOString().split('T')[0]
           };
-          mockUsers.push(newUser);
+          mockUsers.splice(mockUsers.length, 0, newUser);
           resolve(newUser);
         }, 1000);
       });

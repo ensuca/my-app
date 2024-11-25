@@ -47,7 +47,7 @@ const userSlice = createSlice({
         state.error = action.error.message || 'Failed to fetch users';
       })
       .addCase(addUser.fulfilled, (state, action) => {
-        state.users.push(action.payload);
+        state.users = state.users.concat(action.payload);
       });
   }
 });
