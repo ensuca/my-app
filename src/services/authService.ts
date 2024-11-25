@@ -2,6 +2,7 @@
 
 const authService = {
   login: async (username: string, password: string): Promise<AuthResponse> => {
+    console.log(`Login attempt: ${username}:${password}`);
     // Mock service
     return new Promise((resolve, reject) => {
       setTimeout(() => {

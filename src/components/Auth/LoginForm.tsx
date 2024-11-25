@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/useTypedSelector';
 import { loginUser } from '../../store/authSlice';
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const dispatch = useAppDispatch();
   const { loading, error } = useAppSelector((state) => state.auth);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    await dispatch(loginUser({ username, password }));
-  };
+  e.preventDefault();
+  const resultAction = await dispatch(loginUser({ username, password }));
+  
+  if (loginUser.fulfilled.match(resultAction)) {
+    console.log('Login successful:', resultAction.payload);
+    navigate('/'); 
+  } else {
+    console.error('Login failed:', resultAction.payload || resultAction.error.message);
+  }
+};
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

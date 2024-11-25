@@ -11,7 +11,7 @@ export interface User {
     token: string;
   }
   
-  interface AuthState {
+  export interface AuthState {
     isAuthenticated: boolean;
     user: User | null;
     loading: boolean;

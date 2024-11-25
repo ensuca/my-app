@@ -14,15 +14,3 @@ const Layout: React.FC = () => {
 };
 
 export default Layout;
-
-// Store'a user reducer'ı eklemeyi unutmayın (store.ts):
-import { configureStore } from '@reduxjs/toolkit';
-import authReducer from '../../store/authSlice';
-import userReducer from '../../store/userSlice';
-
-export const store = configureStore({
-  reducer: {
-    auth: authReducer,
-    users: userReducer
-  }
-});

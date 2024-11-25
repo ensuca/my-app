@@ -1,4 +1,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import authService from '../services/authService';
+import { AuthResponse, AuthState, User } from '../types';
+
+// Define initial state with proper typing
+const initialState: AuthState = {
+  isAuthenticated: false,
+  user: null,
+  loading: false,
+  error: null
+};
 
 export const loginUser = createAsyncThunk(
   'auth/login',
@@ -11,12 +21,7 @@ export const loginUser = createAsyncThunk(
 
 const authSlice = createSlice({
   name: 'auth',
-  initialState: {
-    isAuthenticated: false,
-    user: null,
-    loading: false,
-    error: null
-  } as AuthState,
+  initialState,
   reducers: {
     logout: (state) => {
       state.isAuthenticated = false;
@@ -37,7 +42,8 @@ const authSlice = createSlice({
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'Login failed';
+        state.error = action.error.message || 'Invalid username or password';
+        console.error('Login error:', action.error.message);
       });
   }
 });
