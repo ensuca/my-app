@@ -19,12 +19,18 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ onClose, onAdd }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!formData.email.includes('@')) {
+      setError('Please enter a valid email address.');
+      return;
+    }
+  
     setLoading(true);
     setError(null);
-
+  
     try {
       await dispatch(addUser(formData)).unwrap();
-      onAdd();
+      onAdd(); 
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to add user');
     } finally {
