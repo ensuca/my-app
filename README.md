@@ -1,3 +1,134 @@
+🇹🇷 Türkçe Açıklama
+1. Proje Genel Bakış
+Bu proje, modern web teknolojileri kullanılarak geliştirilmiş bir kullanıcı yönetim sistemidir. Temel amacı, güvenli ve kullanıcı dostu bir şekilde kullanıcı işlemlerini yönetmektir.
+2. Teknoloji Yığını
+
+Frontend: React (TypeScript)
+State Yönetimi: Redux Toolkit
+Routing: React Router
+Stil: Tailwind CSS
+Mimari: Modern, modüler ve genişletilebilir
+
+3. Proje Özellikleri
+3.1 Kimlik Doğrulama (Authentication)
+
+Güvenli giriş sistemi
+JWT token bazlı kimlik doğrulama
+Korumalı rotalar
+Hata yönetimi
+
+3.2 Kullanıcı Yönetimi
+
+Kullanıcı listeleme
+Yeni kullanıcı ekleme
+Farklı kullanıcı rolleri (Admin, User, Editor)
+Modal tabanlı kullanıcı ekleme ekranı
+
+4. Mimari Detayları
+4.1 Dizin Yapısı
+src/
+├── components/
+│   ├── Auth/           # Kimlik doğrulama bileşenleri
+│   ├── Layout/         # Sayfa düzeni bileşenleri
+│   └── Users/          # Kullanıcı işlemleri bileşenleri
+├── hooks/              # Özel React hookları
+├── services/           # API ve servis katmanı
+├── store/              # Redux state yönetimi
+└── types/              # TypeScript tipleri
+
+4.2 Temel Akışlar
+
+Kullanıcı Girişi
+Kullanıcı Listeleme
+Yeni Kullanıcı Ekleme
+Çıkış Yapma
+
+5. Güvenlik Özellikleri
+
+Korumalı rotalar
+Form validasyonları
+Giriş denemelerinin yönetimi
+Rol bazlı erişim kontrolü
+
+6. Stil ve Kullanılabilirlik
+
+Responsive tasarım
+Tailwind CSS ile modern görünüm
+Kullanıcı dostu arayüz
+Dark/Light tema desteği
+
+🇺🇸 English Description
+1. Project Overview
+This is a comprehensive user management system developed using modern web technologies. Its primary purpose is to manage user operations securely and user-friendly.
+2. Technology Stack
+
+Frontend: React (TypeScript)
+State Management: Redux Toolkit
+Routing: React Router
+Styling: Tailwind CSS
+Architecture: Modern, modular, and extensible
+
+3. Project Features
+3.1 Authentication
+
+Secure login system
+JWT token-based authentication
+Protected routes
+Error management
+
+3.2 User Management
+
+User listing
+New user addition
+Different user roles (Admin, User, Editor)
+Modal-based user addition screen
+
+4. Architectural Details
+4.1 Directory Structure
+src/
+├── components/
+│   ├── Auth/           # Authentication components
+│   ├── Layout/         # Page layout components
+│   └── Users/          # User operation components
+├── hooks/              # Custom React hooks
+├── services/           # API and service layer
+├── store/              # Redux state management
+└── types/              # TypeScript types
+
+4.2 Core Flows
+
+User Login
+User Listing
+Add New User
+Logout
+
+5. Security Features
+
+Protected routes
+Form validations
+Login attempt management
+Role-based access control
+
+6. Style and Usability
+
+Responsive design
+Modern look with Tailwind CSS
+User-friendly interface
+Dark/Light theme support
+
+7. Mock Service Explanation
+In this project, we're using mock services to simulate backend interactions. This means:
+
+Login uses hardcoded credentials (username: 'admin', password: '1234')
+Users are stored in memory
+Simulated API calls with setTimeout
+
+8. How to Run
+
+Clone the repository
+Install dependencies: npm install
+Start the development server: npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
