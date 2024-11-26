@@ -1,7 +1,15 @@
 🇹🇷 Türkçe Açıklama
 1. Proje Genel Bakış
 Bu proje, modern web teknolojileri kullanılarak geliştirilmiş bir kullanıcı yönetim sistemidir. Temel amacı, güvenli ve kullanıcı dostu bir şekilde kullanıcı işlemlerini yönetmektir.
-2. Teknoloji Yığını
+
+Görseller:
+![Ekran görüntüsü 2024-11-26 182909](https://github.com/user-attachments/assets/e0412ec6-2fd1-45a9-9384-a4520655a933)
+![Ekran görüntüsü 2024-11-26 183005](https://github.com/user-attachments/assets/43960442-61ae-4b47-b6cd-398b31207fa2)
+![Ekran görüntüsü 2024-11-26 183017](https://github.com/user-attachments/assets/3b5500f9-2aef-4e05-8adc-16c2f51afd03)
+![Ekran görüntüsü 2024-11-26 183032](https://github.com/user-attachments/assets/fd763204-e33a-49b4-b3e3-0c13ea5ca77c)
+![Ekran görüntüsü 2024-11-26 183102](https://github.com/user-attachments/assets/69ce88da-6c5f-461c-9971-4e9404a0e59d)
+
+3. Teknoloji Yığını
 
 Frontend: React (TypeScript)
 State Yönetimi: Redux Toolkit
