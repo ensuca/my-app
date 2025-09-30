@@ -1,19 +1,4 @@
-<<<<<<< HEAD
 # UserFlow - Modern User Management System
-=======
-🇹🇷 Türkçe Açıklama
-1. Proje Genel Bakış
-Bu proje, modern web teknolojileri kullanılarak geliştirilmiş bir kullanıcı yönetim sistemidir. Temel amacı, güvenli ve kullanıcı dostu bir şekilde kullanıcı işlemlerini yönetmektir.
-
-Görseller:
-![Ekran görüntüsü 2024-11-26 182909](https://github.com/user-attachments/assets/e0412ec6-2fd1-45a9-9384-a4520655a933)
-![Ekran görüntüsü 2024-11-26 183005](https://github.com/user-attachments/assets/43960442-61ae-4b47-b6cd-398b31207fa2)
-![Ekran görüntüsü 2024-11-26 183017](https://github.com/user-attachments/assets/3b5500f9-2aef-4e05-8adc-16c2f51afd03)
-![Ekran görüntüsü 2024-11-26 183032](https://github.com/user-attachments/assets/fd763204-e33a-49b4-b3e3-0c13ea5ca77c)
-![Ekran görüntüsü 2024-11-26 183102](https://github.com/user-attachments/assets/69ce88da-6c5f-461c-9971-4e9404a0e59d)
-
-3. Teknoloji Yığını
->>>>>>> 9b96f3b6c4408c84ccf70cb9e3a96877ff9cffbc
 
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -36,6 +21,28 @@ This project serves as both a functional application and a demonstration of mode
 - **Modern State Management**: Implements Redux Toolkit with async thunks, proper loading states, and error handling
 - **Security-First Approach**: JWT-based authentication, protected routes, and form validation throughout
 - **Developer Experience**: Custom hooks, consistent code patterns, and comprehensive TypeScript support make development efficient and enjoyable
+
+## Screenshots
+
+### Login Page
+![Login Page](https://github.com/user-attachments/assets/e0412ec6-2fd1-45a9-9384-a4520655a933)
+*Split-screen authentication interface with modern design*
+
+### User Management Dashboard
+![User List](https://github.com/user-attachments/assets/43960442-61ae-4b47-b6cd-398b31207fa2)
+*Responsive grid layout displaying all users with role information*
+
+### Add User Modal
+![Add User Modal](https://github.com/user-attachments/assets/fd763204-e33a-49b4-b3e3-0c13ea5ca77c)
+*Modal form with real-time validation for creating new users*
+
+### User List View
+![User Grid View](https://github.com/user-attachments/assets/3b5500f9-2aef-4e05-8adc-16c2f51afd03)
+*Clean card-based layout with user details*
+
+### Application Interface
+![Application UI](https://github.com/user-attachments/assets/69ce88da-6c5f-461c-9971-4e9404a0e59d)
+*Comprehensive user management interface*
 
 ## Key Features
 
@@ -344,6 +351,28 @@ Bu proje hem işlevsel bir uygulama hem de modern web geliştirme kalıplarını
 - **Güvenlik Öncelikli Yaklaşım**: JWT tabanlı kimlik doğrulama, korumalı route'lar ve her yerde form validasyonu
 - **Geliştirici Deneyimi**: Özel hook'lar, tutarlı kod kalıpları ve kapsamlı TypeScript desteği, geliştirmeyi verimli ve keyifli hale getirir
 
+## Ekran Görüntüleri
+
+### Giriş Sayfası
+![Giriş Sayfası](https://github.com/user-attachments/assets/e0412ec6-2fd1-45a9-9384-a4520655a933)
+*Modern tasarımlı bölünmüş ekran kimlik doğrulama arayüzü*
+
+### Kullanıcı Yönetim Paneli
+![Kullanıcı Listesi](https://github.com/user-attachments/assets/43960442-61ae-4b47-b6cd-398b31207fa2)
+*Rol bilgisiyle tüm kullanıcıları gösteren responsive grid düzeni*
+
+### Kullanıcı Ekleme Modalı
+![Kullanıcı Ekleme Modalı](https://github.com/user-attachments/assets/fd763204-e33a-49b4-b3e3-0c13ea5ca77c)
+*Yeni kullanıcı oluşturmak için gerçek zamanlı validasyonlu modal formu*
+
+### Kullanıcı Liste Görünümü
+![Kullanıcı Grid Görünümü](https://github.com/user-attachments/assets/3b5500f9-2aef-4e05-8adc-16c2f51afd03)
+*Kullanıcı detaylarıyla temiz kart tabanlı düzen*
+
+### Uygulama Arayüzü
+![Uygulama UI](https://github.com/user-attachments/assets/69ce88da-6c5f-461c-9971-4e9404a0e59d)
+*Kapsamlı kullanıcı yönetim arayüzü*
+
 ## Temel Özellikler
 
 ### Kimlik Doğrulama ve Güvenlik
@@ -440,12 +469,7 @@ src/
 - **Node.js** (v16 veya üstü)
 - **npm** (v7 veya üstü)
 
-<<<<<<< HEAD
 ### Kurulum
-=======
-
-# Getting Started with Create React App
->>>>>>> 9b96f3b6c4408c84ccf70cb9e3a96877ff9cffbc
 
 ```bash
 # Repository'yi klonlayın
