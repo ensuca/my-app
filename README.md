@@ -1,4 +1,19 @@
+<<<<<<< HEAD
 # UserFlow - Modern User Management System
+=======
+🇹🇷 Türkçe Açıklama
+1. Proje Genel Bakış
+Bu proje, modern web teknolojileri kullanılarak geliştirilmiş bir kullanıcı yönetim sistemidir. Temel amacı, güvenli ve kullanıcı dostu bir şekilde kullanıcı işlemlerini yönetmektir.
+
+Görseller:
+![Ekran görüntüsü 2024-11-26 182909](https://github.com/user-attachments/assets/e0412ec6-2fd1-45a9-9384-a4520655a933)
+![Ekran görüntüsü 2024-11-26 183005](https://github.com/user-attachments/assets/43960442-61ae-4b47-b6cd-398b31207fa2)
+![Ekran görüntüsü 2024-11-26 183017](https://github.com/user-attachments/assets/3b5500f9-2aef-4e05-8adc-16c2f51afd03)
+![Ekran görüntüsü 2024-11-26 183032](https://github.com/user-attachments/assets/fd763204-e33a-49b4-b3e3-0c13ea5ca77c)
+![Ekran görüntüsü 2024-11-26 183102](https://github.com/user-attachments/assets/69ce88da-6c5f-461c-9971-4e9404a0e59d)
+
+3. Teknoloji Yığını
+>>>>>>> 9b96f3b6c4408c84ccf70cb9e3a96877ff9cffbc
 
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -425,7 +440,12 @@ src/
 - **Node.js** (v16 veya üstü)
 - **npm** (v7 veya üstü)
 
+<<<<<<< HEAD
 ### Kurulum
+=======
+
+# Getting Started with Create React App
+>>>>>>> 9b96f3b6c4408c84ccf70cb9e3a96877ff9cffbc
 
 ```bash
 # Repository'yi klonlayın
